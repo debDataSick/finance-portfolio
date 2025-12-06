@@ -6,24 +6,211 @@
     <title>Dewasish Kumar Sha - Finance Professional</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #333; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-        header { background: white; border-radius: 8px; padding: 40px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #2563EB; font-size: 2.5em; margin-bottom: 10px; }
-        .tagline { color: #00BFA5; font-size: 1.2em; margin-bottom: 20px; }
-        .bio { color: #666; line-height: 1.6; font-size: 1.05em; margin-top: 15px; }
-        .section { background: white; border-radius: 8px; padding: 30px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .section h2 { color: #2563EB; border-bottom: 3px solid #00BFA5; padding-bottom: 10px; margin-bottom: 20px; }
-        .item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333; 
+            line-height: 1.6;
+        }
+        
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+        }
+        
+        @media (max-width: 480px) {
+            .container { padding: 12px; }
+        }
+        
+        header { 
+            background: white; 
+            border-radius: 8px; 
+            padding: 40px 30px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            text-align: center; 
+        }
+        
+        @media (max-width: 768px) {
+            header { padding: 30px 20px; margin-bottom: 20px; }
+        }
+        
+        @media (max-width: 480px) {
+            header { padding: 20px 15px; margin-bottom: 15px; }
+        }
+        
+        h1 { 
+            color: #2563EB; 
+            font-size: 2.5em; 
+            margin-bottom: 10px; 
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5em; }
+        }
+        
+        .tagline { 
+            color: #00BFA5; 
+            font-size: 1.2em; 
+            margin-bottom: 20px; 
+        }
+        
+        @media (max-width: 768px) {
+            .tagline { font-size: 1em; }
+        }
+        
+        @media (max-width: 480px) {
+            .tagline { font-size: 0.9em; margin-bottom: 15px; }
+        }
+        
+        .bio { 
+            color: #666; 
+            line-height: 1.6; 
+            font-size: 1.05em; 
+            margin-top: 15px; 
+        }
+        
+        @media (max-width: 768px) {
+            .bio { font-size: 0.95em; }
+        }
+        
+        @media (max-width: 480px) {
+            .bio { font-size: 0.9em; }
+        }
+        
+        .section { 
+            background: white; 
+            border-radius: 8px; 
+            padding: 30px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        
+        @media (max-width: 768px) {
+            .section { padding: 20px; margin-bottom: 15px; }
+        }
+        
+        @media (max-width: 480px) {
+            .section { padding: 15px; margin-bottom: 12px; }
+        }
+        
+        .section h2 { 
+            color: #2563EB; 
+            border-bottom: 3px solid #00BFA5; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px; 
+            font-size: 1.5em;
+        }
+        
+        @media (max-width: 768px) {
+            .section h2 { font-size: 1.3em; margin-bottom: 15px; }
+        }
+        
+        @media (max-width: 480px) {
+            .section h2 { font-size: 1.1em; margin-bottom: 12px; }
+        }
+        
+        .item { 
+            margin-bottom: 20px; 
+            padding-bottom: 20px; 
+            border-bottom: 1px solid #eee; 
+        }
+        
         .item:last-child { border-bottom: none; }
-        .item h3 { color: #2563EB; margin-bottom: 5px; }
-        .item p { color: #666; line-height: 1.6; }
-        .meta { color: #999; font-size: 0.9em; font-style: italic; }
-        .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 15px; }
-        .skill-tag { background: #2563EB; color: white; padding: 8px 12px; border-radius: 5px; text-align: center; font-size: 0.9em; }
-        footer { text-align: center; color: #666; margin-top: 40px; padding: 20px; }
-        a { color: #2563EB; text-decoration: none; }
-        a:hover { text-decoration: underline; color: #00BFA5; }
+        
+        .item h3 { 
+            color: #2563EB; 
+            margin-bottom: 5px; 
+            font-size: 1.1em;
+        }
+        
+        @media (max-width: 480px) {
+            .item h3 { font-size: 1em; }
+        }
+        
+        .item p { 
+            color: #666; 
+            line-height: 1.6; 
+            font-size: 1em;
+        }
+        
+        @media (max-width: 480px) {
+            .item p { font-size: 0.95em; }
+        }
+        
+        .meta { 
+            color: #999; 
+            font-size: 0.9em; 
+            font-style: italic; 
+        }
+        
+        .skills { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 10px; 
+            margin-top: 15px; 
+        }
+        
+        @media (max-width: 768px) {
+            .skills { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+        }
+        
+        @media (max-width: 480px) {
+            .skills { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 6px; }
+        }
+        
+        .skill-tag { 
+            background: #2563EB; 
+            color: white; 
+            padding: 8px 12px; 
+            border-radius: 5px; 
+            text-align: center; 
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 480px) {
+            .skill-tag { padding: 6px 8px; font-size: 0.8em; }
+        }
+        
+        footer { 
+            text-align: center; 
+            color: #666; 
+            margin-top: 40px; 
+            padding: 20px; 
+        }
+        
+        @media (max-width: 480px) {
+            footer { margin-top: 30px; padding: 15px; }
+        }
+        
+        a { 
+            color: #2563EB; 
+            text-decoration: none; 
+        }
+        
+        a:hover { 
+            text-decoration: underline; 
+            color: #00BFA5; 
+        }
+        
+        .contact-item {
+            margin-bottom: 12px;
+            word-break: break-word;
+        }
+        
+        @media (max-width: 480px) {
+            .contact-item { margin-bottom: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -73,9 +260,9 @@
 
         <div class="section">
             <h2>🔗 Connect</h2>
-            <p><strong>Email:</strong> <a href="mailto:debsha15@gmail.com">debsha15@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/dewasish-kumar-sha" target="_blank">linkedin.com/in/dewasish-kumar-sha</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/debDataSick" target="_blank">github.com/debDataSick</a></p>
+            <div class="contact-item"><strong>Email:</strong> <a href="mailto:debsha15@gmail.com">debsha15@gmail.com</a></div>
+            <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/dewasish-kumar-sha" target="_blank">linkedin.com/in/dewasish-kumar-sha</a></div>
+            <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/debDataSick" target="_blank">github.com/debDataSick</a></div>
         </div>
 
         <footer>
